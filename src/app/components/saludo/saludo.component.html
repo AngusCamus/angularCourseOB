@@ -1,0 +1,13 @@
+<h1>Hola, {{ nombre }}!</h1>
+<h3 [ngClass]="nombre == 'default'? 'default': 'saludo'"id="usuario" [innerText]="nombre">
+    <!-- no indicamos nada en las etiquetas-->
+    <!-- Inner text seria similar a {{nombre}}-->
+</h3>
+
+<p [ngStyle]= "{color: 'orange'}">
+    Hola, como estas?
+</p>
+<p [ngStyle]= "myStyle">
+    Adios!
+</p>
+<button id="emit-alert" (click)="enviarMensajePadre()">Enviar mensaje del saludo al padre</button>
